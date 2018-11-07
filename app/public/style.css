@@ -1,0 +1,22 @@
+html, body {
+    background-color: black;
+}
+
+#jumbo1{
+    width: 75%;
+    position: relative;
+    left: 7%;
+    margin: 10%;
+}
+
+#jumbo2 {
+    width: 75%;
+    position: relative;
+    left: 13%;
+    margin: 5px;
+}
+
+#modalBody{
+    text-align: center;
+}
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Match</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="style.css" />
+
+</head>
+
+<body>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Here Is Your New BestFriend!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" id="modalbody" >
+                      <p id= "yourBestFriend"></p>
+                      <img src="" alt="person.jpg" id="profileImg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+    <div class="jumbotron jumbotron-fluid" id="jumbo2">
+        <div class="container">
+            <h1 class="display-3">Questions!</h1>
+            <p class="lead">Rate yourself with 5 meaning you strongly agree and 1 meaning you strongly dissagree</p>
+            <div class="form-group">
+                <label for="question1">How likely are you to go out on a monday night?</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question1" id="question1" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+            <div class="form-group">
+                <label for="question2">Going to a coding meetup sounds fun!</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question2" id="question2" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+
+            <div class="form-group">
+                <label for="question3">How likely are you to stay in on a Friday night?</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question3" id="question3" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+
+            <div class="form-group">
+                <label for="question4">A night in playing some video games or board games with friends sounds fun!</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question4" id="question4" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+
+            <div class="form-group">
+                <label for="question5">Lets go to a rave!</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question5" id="question5" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+
+            <div class="form-group">
+                <label for="question6">Having beers and playing some pool or some other bar activities</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question6" id="question6" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+
+            <div class="form-group">
+                <label for="question7">Getting up early for a long all day hike</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question7" id="question7" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+            <div class="form-group">
+                <label for="question8">Going down and helping at the food bank sounds like a good time</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question8" id="question8" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+            <div class="form-group">
+                <label for="question8">Going down and helping at the food bank sounds like a good time</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question9" id="question9" aria-describedby="helpId" placeholder="1-5">
+            </div>
+
+            <div class="form-group">
+                <label for="question8">Going down and helping at the food bank sounds like a good time</label>
+                <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                    class="form-control question" name="question10" id="question10" aria-describedby="helpId"
+                    placeholder="1-5">
+            </div>
+
+            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal" href="/results" role="button" id="submit">Click Here To Submit
+                your answers</a>
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            console.log("Im Clicked!")
+            let userArr = [];
+            let input1 = $("#question1").val();
+            let input2 = $("#question2").val();
+            let input3 = $("#question3").val();
+            let input4 = $("#question4").val();
+            let input5 = $("#question5").val();
+            let input6 = $("#question6").val();
+            let input7 = $("#question7").val();
+            let input8 = $("#question8").val();
+            let input9 = $("#question9").val();
+            let input10 = $("#question10").val();
+            userArr.push(input1);
+            userArr.push(input2);
+            userArr.push(input3);
+            userArr.push(input4);
+            userArr.push(input5);
+            userArr.push(input6);
+            userArr.push(input7);
+            userArr.push(input8);
+            userArr.push(input9);
+            userArr.push(input10);
+
+            console.log(userArr);
+
+            // Using a RegEx Pattern to remove spaces from searchedCharacter
+            // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+            // searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+
+            // QUESTION: What does $.get do? What are the parameters it is expecting?
+            
+            var user = {
+                quizAns: userArr
+            };
+            // $.ajax({
+            //   url: '/api/characters',
+            //   method: 'POST',
+            //   data: newCharacter
+            // }).then(data => {
+            //   console.log(data)
+            // })
+            // Question: What does this code do??
+            $.post("/api/findBestFriend", user).then(function(res){
+                console.log(res);
+                $("#yourBestFriend").text(res.bestFriend.name);
+                $("#profileImg").attr("src", res.bestFriend.pic);
+            }); 
+
+           
+
+
+
+          
+
+                
+
+
+
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>
