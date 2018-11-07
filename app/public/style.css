@@ -16,7 +16,12 @@ html, body {
     margin: 5px;
 }
 
-#modalBody{
+#modalbody p{
     text-align: center;
+}
+
+#profileImg{
+    position: relative;
+    left: 26%;
 }
 

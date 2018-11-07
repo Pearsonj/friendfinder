@@ -1,6 +1,6 @@
 
 let arrFriends = [{
-    name: "dan",
+    name: "Dan",
     email: "karla@karla.com",
     quizAns: [4, 3, 1, 2, 2, 5, 2, 5, 4, 2],
     pic: "./person1.jpeg"
