@@ -1,5 +1,5 @@
 # Welcome To Friend Finder!
-**Please note this app is on heroku and may take a minute or two to actually load in the browser!
+**Please note this app is on heroku and may take a minute or two to actually load in the browser!**
 
 ![](app/public/mainPageCapture.png)
 
