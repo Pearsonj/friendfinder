@@ -14,27 +14,30 @@
 
 <body>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Here Is Your New BestFriend!</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Here Is Your New BestFriend!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body" id="modalbody" >
-                      <h1><p id= "yourBestFriend"></p></h1>
-                      <img src="" alt="person.jpg" id="profileImg">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      
-                    </div>
-                  </div>
+                    </button>
                 </div>
-              </div>
-              
+                <div class="modal-body" id="modalbody">
+                    <h1>
+                        <p id="yourBestFriend"></p>
+                    </h1>
+                    <img src="" alt="person.jpg" id="profileImg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="jumbotron jumbotron-fluid" id="jumbo2">
         <div class="container">
@@ -106,8 +109,14 @@
                     placeholder="1-5">
             </div>
 
-            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal" href="/results" role="button" id="submit">Click Here To Submit
+            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal" href="/results" role="button"
+                id="submit">Click Here To Submit
                 your answers</a>
+
+            <a class="btn btn-primary btn-lg" href="/" role="button"
+                id="submit">Go Home</a>
+
+
             </p>
         </div>
     </div>
@@ -123,7 +132,6 @@
         crossorigin="anonymous"></script>
 
     <script>
-        
         $("#submit").on("click", function (event) {
             event.preventDefault();
             console.log("Im Clicked!")
@@ -156,7 +164,7 @@
             // searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
 
             // QUESTION: What does $.get do? What are the parameters it is expecting?
-            
+
             var user = {
                 quizAns: userArr
             };
@@ -168,19 +176,19 @@
             //   console.log(data)
             // })
             // Question: What does this code do??
-            $.post("/api/findBestFriend", user).then(function(res){
+            $.post("/api/findBestFriend", user).then(function (res) {
                 console.log(res);
                 $("#yourBestFriend").text(res.bestFriend.name);
                 $("#profileImg").attr("src", res.bestFriend.pic);
-            }); 
-
-           
+            });
 
 
 
-          
 
-                
+
+
+
+
 
 
 
