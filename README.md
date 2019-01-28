@@ -1,6 +1,8 @@
 # Welcome To Friend Finder!
 **Please note this app is on heroku and may take a minute or two to actually load in the browser!**
 
+https://pacific-meadow-87242.herokuapp.com/
+
 ![](app/public/mainPageCapture.PNG)
 
 
